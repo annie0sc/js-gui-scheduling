@@ -1,8 +1,9 @@
 console.log('Starting script')
-
+//store numbers with their units like here is ms for time
 const delay_ms = 1000;
 let intervalID;  // id will be assigned when setInterval is called
 
+//querySelector('#btn')
 document.getElementById('btn').addEventListener('click', () => {
   console.log('Button clicked - calling clearInterval.')
   console.log('Refresh page to reflash.')
@@ -20,6 +21,7 @@ window.addEventListener('load', (event) => {
 
 function flashText() {
   const el = document.getElementById('box')
+  //if true and else false
   el.style.color = el.style.color == 'green' ? 'red' : 'green'
 }
 
